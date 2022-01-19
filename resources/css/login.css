@@ -1,0 +1,61 @@
+.logo {
+    width: 90px;
+    margin: 0 auto 80px;
+}
+
+.form_logo {
+    margin-bottom: 35px;
+}
+
+.input_group {
+    margin-bottom: 12px;
+}
+
+.label_color label,
+.label_color input {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+}
+
+.label_color label {
+    display: inline-block;
+    width: 73px;
+    background-color: #113c8a;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.label_color input {
+    width: calc(100% - 78px);
+    background-color: #dbe9f8;
+    border: 1px solid #0e57a7;
+    line-height: 1;
+    padding: 10px;
+}
+
+.check_item {
+    margin: 20px 0;
+}
+
+.signin_etc {
+    margin-top: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.signin_etc a:first-of-type {
+    margin-right: 10px;
+    position: relative;
+}
+
+.signin_etc a:first-of-type::after {
+    content: " ";
+    display: block;
+    background-color: #000;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
