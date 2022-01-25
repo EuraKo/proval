@@ -80,3 +80,14 @@
 .signup_page button {
     margin-top: 35px;
 }
+
+.input_button {
+    margin-top: 10px;
+}
+
+.input_button input {
+    width: calc(100% - 57px);
+    height: 40px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}

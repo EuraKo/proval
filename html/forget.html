@@ -52,10 +52,35 @@
             <span></span>
         </a> -->
     </header>
-    <div class="wrap big_padding forget_page">
+    <div class="wrap big_padding">
+        <form action="post">
+            <label for="">회원정보에 등록한 이메일</label>
+            <div class="input_button">
+                <input type="email" id="findID">
+                <button type="button" id="findIdModal" class="btn modal_btn" data-modal="sendEmailModal">확인</button>
 
+            </div>
+        </form>
     </div>
     <footer>Professional<br />Control Valves </footer>
+
+    <!-- sendEmailModal -->
+    <div id="sendEmailModal" class="modal">
+        <div class="modal_wrap">
+            <div class="modal_header">
+                <button class="btn_cancle"></button>
+            </div>
+            <div class="modal_body">
+                <div class="modal_cont">
+                    <div class="model_desc">
+                        <p class="text_blue find_email">proval.sd@proval.co.kr</p>
+                        귀하의 메일로 견적서를 발송 하시겠습니까?
+                    </div>
+                    <a href="index.html" class="btn">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jquery -->
     <script src="../vendors/jquery/jquery-1.11.3.min.js"></script>

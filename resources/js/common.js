@@ -207,6 +207,11 @@ $(function() {
             $(this).find("span").text("상세정보조회");
             $(this).removeClass("open_btn");
         }
+    });
+    //  비밀번호 찾기 이메일 주소
+    $("#findIdModal").on("click", function() {
+        $(".find_email").text($("#findID").val());
+
     })
 })
 
