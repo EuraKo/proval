@@ -42,9 +42,9 @@ $(function() {
         $("#" + modalID).fadeIn().addClass("modal_show");
     })
 
-    $(".modal .btn_cancle").on("click", function() {
-        $(this).closest(".modal").fadeOut().removeClass(".modal_show")
-    })
+    $(".modal .btn_cancle, .btn_modal_cancle").on("click", function() {
+        $(this).closest(".modal").fadeOut().removeClass(".modal_show");
+    });
 
 
     // datepicker ====================
@@ -119,7 +119,7 @@ $(function() {
         e.preventDefault();
         valveLeng = valveLeng + 1;
 
-        $(".square_box").find(".plus").before('<li class="square_active">' + valveLeng + '</li>');
+        $(".square_box").find(".plus").before('<li class="valve_default">' + valveLeng + '</li>');
 
         if (valveLeng == 2 || valveLeng == 3) {
             $(".blank_box")[0].remove();
@@ -127,6 +127,12 @@ $(function() {
         squareBoxW();
 
     });
+
+    // 벨브 클릭 시
+    $(".square_box").on("click", ".valve_default", function() {
+        $(this).siblings("li").removeClass("square_active");
+        $(this).addClass("square_active");
+    })
 
     // 벨브삭제
     $(".remove_valve").on("click", function(e) {
@@ -182,8 +188,25 @@ $(function() {
 
             $(".square_box").css("transform", "translateX(" + -offset + "px)")
         }
+    })
 
+    // tag 선택
+    $(".tag_list").on("click", "li", function() {
+        $(this).siblings("li").removeClass("tag_active");
+        $(this).addClass("tag_active");
+    })
 
+    // 상세정보 버튼
+    $(".toggle_btn").on("click", function() {
+        var toggleBox = $(this).closest("li").find(".toggle_box");
+        toggleBox.toggleClass("open_box");
+        if (toggleBox.hasClass("open_box")) {
+            $(this).find("span").text("간단히");
+            $(this).addClass("open_btn");
+        } else {
+            $(this).find("span").text("상세정보조회");
+            $(this).removeClass("open_btn");
+        }
     })
 })
 

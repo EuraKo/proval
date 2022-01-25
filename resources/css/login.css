@@ -38,24 +38,45 @@
     margin: 20px 0;
 }
 
-.signin_etc {
-    margin-top: 14px;
-    font-size: 12px;
-    text-align: center;
+.signin_etc_box {
+    justify-content: space-between;
+    align-items: center;
 }
 
-.signin_etc a:first-of-type {
-    margin-right: 10px;
+.btn_forget {
     position: relative;
+    padding-left: 17px;
+    font-size: 12px;
 }
 
-.signin_etc a:first-of-type::after {
+.btn_forget:before {
     content: " ";
-    display: block;
-    background-color: #000;
-    width: 1px;
-    height: 100%;
     position: absolute;
-    right: -5px;
-    top: 0;
+    left: 0;
+    top: -4px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/ico_secrit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+}
+
+
+/* signup_page */
+
+.signup_page label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.signup_page input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.signup_page button {
+    margin-top: 35px;
 }

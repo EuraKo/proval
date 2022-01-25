@@ -210,7 +210,8 @@
     top: 50%;
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    /* margin-top: calc(0px - (var(--swiper-navigation-size)/ 2)); */
+    transform: translateY(-50%);
     z-index: 10;
     cursor: pointer;
     display: flex;
