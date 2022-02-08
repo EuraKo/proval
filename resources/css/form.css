@@ -403,7 +403,7 @@ li.tag_active .btn_tag {
 }
 
 .qttn_swiper .swiper-wrapper {
-    min-height: calc(100vh - 426px);
+    /* min-height: calc(100vh - 426px); */
 }
 
 .swiper-slide {
@@ -578,4 +578,17 @@ li.tag_active .btn_tag {
     font-size: 12px;
     line-height: 1.5;
     font-family: 'NanumBarunGothicBold';
+}
+
+.list_btn {
+    width: 50%;
+    border: 1px solid #0e57a7;
+    color: #0e57a7;
+    font-size: 12px;
+    background-color: #fff;
+    margin: 5px 7px 5px 0;
+}
+
+.list_btn:last-of-type {
+    margin-right: 0;
 }

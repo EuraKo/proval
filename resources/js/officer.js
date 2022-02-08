@@ -1,4 +1,5 @@
 var officer_swiper = new Swiper(".officer_swiper", {
+    autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

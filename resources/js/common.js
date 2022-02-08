@@ -9,7 +9,7 @@ $(function() {
         // var footerH = $("footer").outerHeight();
         var footerH = $("footer").outerHeight();
         var warpH = $(window).height() - (headerH + footerH);
-        $(".wrap").css("min-height", warpH + "px");
+        // $(".wrap").css("min-height", warpH + "px");
     }
     setTimeout(function() {
         contentHeight()

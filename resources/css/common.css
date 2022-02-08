@@ -40,6 +40,14 @@ input[type=text]::-ms-clear {
     display: none;
 }
 
+.wrap {
+    min-height: calc(100vh - 63px - 147px);
+}
+
+.login_page .wrap {
+    min-height: calc(100vh - 63px - 87px);
+}
+
 .wrap,
 .noHwrap {
     background-color: #fff;
@@ -65,6 +73,10 @@ input[type=text]::-ms-clear {
 
 .text_blue {
     color: #0e57a7;
+}
+
+.text_grey {
+    color: #888;
 }
 
 
@@ -174,6 +186,10 @@ input[type=text]::-ms-clear {
 
 .bold {
     font-family: 'NanumBarunGothicBold';
+}
+
+.bb_0 {
+    border-bottom: 0 !important;
 }
 
 
@@ -615,4 +631,39 @@ footer {
 
 .now_revision {
     background-color: #eff4fc;
+}
+
+
+/* 제작현황 페이지 */
+
+.product_orderdate {
+    margin-left: 5px;
+}
+
+.product_dead {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.product_order {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.process_box ul {
+    margin-bottom: 25px;
+}
+
+.process_box li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.process_num {
+    font-family: 'NanumBarunGothicBold';
 }

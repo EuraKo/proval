@@ -45,7 +45,7 @@
             <h1>
                 <a href="main.html"><img src="../resources/images/logo.png" alt="proval로고"></a>
             </h1>
-            <div class="page_title">견적관리</div>
+            <div class="page_title">주문목록</div>
         </div>
         <a href="menu.html" class="gnb_btn">
             <span></span>
@@ -54,54 +54,18 @@
         </a>
     </header>
     <div class="wrap full_wrap">
-        <div class="full_wrap_pd tab_btns">
-            <a href="officerCrown.html" class="btn btn_gray">견적 진행중</a>
-            <a href="estmtCmplt.html" class="btn btn_gray tab_active">견적 완료</a>
-        </div>
-        <div class="full_wrap_pd cont">
-            <div class="flex_box date_box">
-                <div class="left_box">
-                    <span class="year">2021년</span>
-                    <div class="swiper_select_box">
-                        <button class="prev_btn"></button>
-                        <span class="swiper_cont">2월</span>
-                        <button class="next_btn"></button>
-                    </div>
-                </div>
-                <div class="right_box">
-                    <button href="" class="btn_cog modal_btn" data-modal="modalDate"></button>
-                </div>
-            </div>
+        <div class="full_wrap_pd">
             <div class="select_list">
                 <ul>
                     <li>
                         <div class="list_li list_head">
-                            <div class="table_title">PROJECT</div>
-                            <div class="table_desc">삼성물산 #1</div>
-                        </div>
-                        <div class="list_middle_box">
-                            <div class="list_middle_left">
-                                <div class="list_li">
-                                    <div class="table_title">견적 번호</div>
-                                    <div class="table_desc">YA211203-036</div>
-                                </div>
-                                <div class="list_li">
-                                    <div class="table_title">견적 요청일</div>
-                                    <div class="table_desc">21.02.15</div>
-                                </div>
-
-                            </div>
-                            <div class="list_middle_right">
-                                <button class="btn btn_wh modal_btn" data-modal="modalOrder">주문<br/>진행</button>
-                            </div>
+                            <div class="table_title">Order No.</div>
+                            <div class="table_desc">C210101-01</div>
                         </div>
                         <div class="list_li">
-                            <div class="list_middle_left list_li">
-                                <div class="table_title">리비전</div>
-                                <div class="table_desc">D</div>
-                            </div>
-                            <div class="list_middle_right mini_btn_box">
-                                <button class="btn btn_wh modal_btn" data-modal="modalRevision">조회</button>
+                            <div class="table_title">납품예정일</div>
+                            <div class="table_desc">
+                                21/01/01
                             </div>
                         </div>
                         <div class="toggle_box">
@@ -265,26 +229,8 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                             <!-- // Swiper -->
-                            <div class="officer_date_list">
-                                <ul>
-                                    <li>
-                                        <div class="officer_title">견적접수</div>
-                                        <div class="officer_date">2021.02.05</div>
-                                    </li>
-                                    <li>
-                                        <div class="officer_title">접수중</div>
-                                        <div class="officer_date">2021.02.05</div>
-                                    </li>
-                                    <li>
-                                        <div class="officer_title">견적완료</div>
-                                        <div class="officer_date">2021.02.05</div>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="skyblue_box">
                                 <div class="estmt_title bold">견적금액</div>
                                 <div class="estmt_cont">
@@ -293,6 +239,11 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="list_li bb_0">
+                            <a href="productStus.html" class="btn list_btn">제작현황</a>
+                            <a href="delivery.html" class="btn list_btn">배송관리</a>
+                        </div>
                         <!-- // hide_box -->
                         <button class="toggle_btn"><span>상세정보조회</span></button>
                     </li>
@@ -300,6 +251,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
     <footer class="common_footer">
         <div class="footer_logo"></div>
@@ -314,170 +266,13 @@
             </div>
         </div>
     </footer>
-    <!-- modalDate -->
-    <div id="modalDate" class="modal">
-        <div class="modal_wrap">
-            <div class="modal_header includ_title">
-                조회옵션
-                <button class="btn_cancle"></button>
-            </div>
-            <div class="modal_body">
-                <div class="modal_cont">
-                    <div class="cont_group">
-                        <div class="modal_subtitle bold">조회기간</div>
-                        <div class="date_btns">
-                            <button class="btn btn_sm btn_dateDuration" data-duration="1m">1개월</button>
-                            <button class="btn btn_sm btn_dateDuration" data-duration="3m">3개월</button>
-                            <button class="btn btn_sm btn_dateDuration" data-duration="6m">6개월</button>
-                            <button class="btn btn_sm btn_dateDuration" data-duration="1y">1년</button>
-                        </div>
-                        <div class="date_selects">
-                            <div class="datepick_item">
-                                <input type="text" id="searchStartDate" class="datepick">
-                            </div>
-                            <span class="dasi">-</span>
-                            <div class="datepick_item">
-                                <input type="text" id="searchEndDate" class="datepick">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont_group">
-                        <div class="modal_subtitle bold">전체조회</div>
-                        <div class="all_searchs">
-                            <button class="btn btn_sm">최신순</button>
-                            <button class="btn btn_sm">과거순</button>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modalRevision-->
-    <div id="modalRevision" class="modal">
-        <div class="modal_wrap">
-            <div class="modal_header includ_title">
-                리비전 이력
-                <button class="btn_cancle"></button>
-            </div>
-            <div class="modal_body">
-                <div class="modal_cont">
-                    <ul class="revision_list">
-                        <li>
-                            <div class="revision_date">21.01.03</div>
-                            <div class="revision_cont_box">
-                                <div class="revision_cont">A</div>
-                                <div class="revision_btn">
-                                    <button class="btn btn_wh btn_modal_cancle">이동</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="revision_date">21.01.03</div>
-                            <div class="revision_cont_box">
-                                <div class="revision_cont">B</div>
-                                <div class="revision_btn">
-                                    <button class="btn btn_wh btn_modal_cancle">이동</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="revision_date">21.01.03</div>
-                            <div class="revision_cont_box">
-                                <div class="revision_cont">C</div>
-                                <div class="revision_btn">
-                                    <button class="btn btn_wh btn_modal_cancle">이동</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="now_revision">
-                            <div class="revision_date">21.01.03</div>
-                            <div class="revision_cont_box">
-                                <div class="revision_cont">D</div>
-
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modalOrder -->
-    <div id="modalOrder" class="modal">
-        <div class="modal_wrap">
-            <div class="modal_header">
-                <button class="btn_cancle"></button>
-            </div>
-            <div class="modal_body">
-                <div class="modal_cont">
-                    <div class="model_desc">
-                        주문이 접수되었습니다.<br /> 감사합니다.
-                    </div>
-                    <a href="main.html" class="btn">홈으로</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modalEmail -->
-    <div id="modalEmail" class="modal">
-        <div class="modal_wrap">
-            <div class="modal_header">
-                <button class="btn_cancle"></button>
-            </div>
-            <div class="modal_body">
-                <div class="modal_cont">
-                    <div class="model_desc">
-                        <p class="text_blue">proval.sd@proval.co.kr</p>
-                        귀하의 메일로 견적서를 발송 하시겠습니까?
-                    </div>
-                    <div class="btns_center">
-                        <button class="btn btn_50 modal_btn btn_modal_cancle" data-modal="modalEmailConfirm">메일전송</button>
-                        <button class="btn btn_50 btn_gray modal_btn btn_modal_cancle" data-modal="modalEmailInput">다른메일</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modalEmailInput -->
-    <div id="modalEmailInput" class="modal">
-        <div class="modal_wrap">
-            <div class="modal_header">
-                <button class="btn_cancle"></button>
-            </div>
-            <div class="modal_body">
-                <div class="modal_cont">
-                    <div class="model_desc">
-                        <input type="text" class="big_input">
-                        <p>메일 주소를 입력해 주세요.</p>
-                    </div>
-                    <button class="btn modal_btn btn_modal_cancle" data-modal="modalEmailConfirm">메일전송</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modalEmailConfirm -->
-    <div id="modalEmailConfirm" class="modal">
-        <div class="modal_wrap">
-            <div class="modal_header">
-                <button class="btn_cancle"></button>
-            </div>
-            <div class="modal_body">
-                <div class="modal_cont">
-                    <div class="model_desc">
-                        <p class="text_blue">proval.sd@proval.co.kr</p>
-                        견적서가 발송되었습니다.<br /> 감사합니다.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- jquery -->
-    <script src="../vendors/jquery/jquery-1.11.3.min.js "></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js "></script>
+    <script src="../vendors/jquery/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../vendors/swiper/swiper.js "></script>
-
     <!-- common -->
-    <script src="../resources/js/common.js "></script>
+    <script src="../resources/js/common.js"></script>
     <script src="../resources/js/officer.js "></script>
 </body>
 
