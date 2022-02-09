@@ -116,3 +116,19 @@
 }
 
 .check_box input {}
+
+.bigform_page .agree_input {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.agree_input input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+}
+
+.agree_input small {
+    font-size: 12px;
+}

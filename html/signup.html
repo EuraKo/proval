@@ -38,7 +38,7 @@
     <title>PROVAL</title>
 </head>
 
-<body>
+<body class="signup_page">
     <header>
         <div class="logo_box">
             <h1>
@@ -68,6 +68,8 @@
             <input type="tel" class="input_bk">
             <label for="">휴대번호</label>
             <input type="tel" class="input_bk">
+            <label for="" class="modal_btn agree_input" data-modal="modalTerms">이용약관 동의 <small>(필수)</small> <input type="checkbox" id="agreeTerm"></label>
+            <label for="" class="modal_btn agree_input" data-modal="modalPrivacy">개인정보 수집 및 이용 동의 <small>(필수)</small> <input type="checkbox"></label>
 
             <button class="btn btn_100">가입하기</button>
         </form>
@@ -76,11 +78,43 @@
     </div>
     <footer>Professional<br />Control Valves </footer>
 
+    <!-- modalTerms -->
+    <div id="modalTerms" class="modal">
+        <div class="modal_wrap">
+            <div class="modal_header includ_title">
+                이용약관 동의
+                <button class="btn_cancle"></button>
+            </div>
+            <div class="modal_body">
+                <div class="modal_cont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, a similique deleniti enim magni, iure ab, tempora provident ut nemo ratione autem tenetur facere amet numquam nesciunt ducimus sunt vel.
+                    <button class="btn btn_agree" data-agree="#agreeTerm">동의</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modalPrivacy -->
+    <div id="modalPrivacy" class="modal">
+        <div class="modal_wrap">
+            <div class="modal_header includ_title">
+                개인정보 수집 및 이용 동의
+                <button class="btn_cancle"></button>
+            </div>
+            <div class="modal_body">
+                <div class="modal_cont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quasi provident consectetur laboriosam sequi accusantium commodi est ad eos neque facere repellendus corporis blanditiis dolor a esse quis, eaque veniam.
+                    <button class="btn btn_agree">동의</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jquery -->
     <script src="../vendors/jquery/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- common -->
     <script src="../resources/js/common.js"></script>
+    <script src="../resources/js/signup.js"></script>
 </body>
 
 </html>

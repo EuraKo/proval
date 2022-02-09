@@ -45,6 +45,12 @@ input[type=text]::-ms-clear {
 }
 
 .login_page .wrap {
+    min-height: calc(100vh - 87px);
+}
+
+.main_page .wrap,
+.forget_page .wrap,
+.signup_page .wrap {
     min-height: calc(100vh - 63px - 87px);
 }
 

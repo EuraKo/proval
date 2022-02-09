@@ -406,6 +406,11 @@ li.tag_active .btn_tag {
     /* min-height: calc(100vh - 426px); */
 }
 
+.swiper_wrap {
+    max-height: calc(100vh - 426px);
+    overflow-y: auto;
+}
+
 .swiper-slide {
     background-color: #eff4fc;
     font-size: 12px;
